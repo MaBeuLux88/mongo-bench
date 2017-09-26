@@ -6,3 +6,9 @@ This is practical to determine the empirical limits of your MongoDB cluster.
 
 The usual use case is to start a `mongostat` and a `htop` on your MongoDB server and run a benchmark on your application machines to see how many read or write operations per seconds your MongoDB can handle.
 If you think the network is a bottleneck, maybe you could consider running this benchmark directly from the MongoDB server too to see the difference you get.
+
+# Compilation
+`mvn clean assembly:single`
+
+# How to use
+`java -jar mongo-bench-1.0.0-SNAPSHOT-jar-with-dependencies.jar`
